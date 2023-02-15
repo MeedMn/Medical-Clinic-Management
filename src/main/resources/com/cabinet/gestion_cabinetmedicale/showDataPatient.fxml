@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="576.0" prefWidth="419.0" style="-fx-border-color: black; -fx-border-width: 1;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cabinet.gestion_cabinetmedicale.ShowDataPatientController">
+   <children>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="160.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../media/PatientProfile.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="14.0" layoutY="128.0" prefHeight="426.0" prefWidth="392.0" style="-fx-background-color: #DCDCDC;">
+         <children>
+            <Label layoutX="21.0" layoutY="41.0" prefWidth="69.0" text="N o m : ">
+               <font>
+                  <Font name="Agency FB Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="21.0" layoutY="105.0" prefHeight="28.0" prefWidth="100.0" text="P r e n o m : ">
+               <font>
+                  <Font name="Agency FB Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="21.0" layoutY="169.0" prefWidth="69.0" text="C n e :">
+               <font>
+                  <Font name="Agency FB Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="21.0" layoutY="233.0" prefWidth="69.0" text="A g e :">
+               <font>
+                  <Font name="Agency FB Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="21.0" layoutY="297.0" prefHeight="28.0" prefWidth="132.0" text="T e l e p h o n e : ">
+               <font>
+                  <Font name="Agency FB Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="21.0" layoutY="361.0" prefHeight="28.0" prefWidth="233.0" text="D a t e  D e  N a i s s a n c  e : ">
+               <font>
+                  <Font name="Agency FB Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="dateShow" layoutX="268.0" layoutY="362.0" prefHeight="28.0" prefWidth="109.0" text="00/00/0000">
+               <font>
+                  <Font name="Agency FB" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="telShow" layoutX="159.0" layoutY="297.0" prefHeight="28.0" prefWidth="169.0" text="+212 6 42376585">
+               <font>
+                  <Font name="Agency FB" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="ageShow" layoutX="81.0" layoutY="234.0" prefHeight="28.0" prefWidth="38.0" text="120">
+               <font>
+                  <Font name="Agency FB" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="cneShow" layoutX="81.0" layoutY="170.0" prefHeight="28.0" prefWidth="38.0" text="120">
+               <font>
+                  <Font name="Agency FB" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="prenomShow" layoutX="127.0" layoutY="106.0" prefHeight="28.0" prefWidth="169.0" text="120">
+               <font>
+                  <Font name="Agency FB" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="nomShow" layoutX="90.0" layoutY="42.0" prefHeight="28.0" prefWidth="169.0" text="120">
+               <font>
+                  <Font name="Agency FB" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="397.0" layoutY="4.0" onMouseClicked="#CloseBtn" prefHeight="31.0" prefWidth="15.0" text="X">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</AnchorPane>

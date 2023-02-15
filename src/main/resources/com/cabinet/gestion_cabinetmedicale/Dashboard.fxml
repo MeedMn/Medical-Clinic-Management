@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="dashboard1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#onMouseOver" prefHeight="650.0" prefWidth="1108.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cabinet.gestion_cabinetmedicale.DashboardController">
+   <children>
+      <AnchorPane prefHeight="283.0" prefWidth="272.0">
+         <children>
+            <AnchorPane prefHeight="650.0" prefWidth="238.0" style="-fx-background-color: #2a2a2a;">
+               <children>
+                  <ImageView fitHeight="31.0" fitWidth="36.0" layoutX="52.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../media/icon.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="97.0" layoutY="18.0" prefHeight="48.0" prefWidth="86.0" text="Medicated" textFill="WHITE">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="17.0" />
+                     </font>
+                  </Label>
+                  <ButtonBar layoutX="14.0" layoutY="120.0" onMouseClicked="#onAccueilClick" prefHeight="40.0" prefWidth="183.0">
+                    <buttons>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" onMouseClicked="#onAccueilClick" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../media/home-page.png" />
+                           </image>
+                        </ImageView>
+                      <Button alignment="TOP_LEFT" mnemonicParsing="false" onMouseClicked="#onAccueilClick" prefHeight="30.0" prefWidth="195.0" style="-fx-background-color: transparent;" text="Accueil" textFill="WHITE">
+                           <font>
+                              <Font name="Yu Gothic Medium" size="17.0" />
+                           </font>
+                        </Button>
+                    </buttons>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ButtonBar>
+                  <ButtonBar fx:id="patientbtn" layoutX="14.0" layoutY="200.0" onMouseClicked="#onPatientsClick" prefHeight="40.0" prefWidth="183.0">
+                     <buttons>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" onMouseClicked="#onPatientsClick" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../media/patient.png" />
+                           </image>
+                        </ImageView>
+                        <Button alignment="TOP_LEFT" mnemonicParsing="false" onMouseClicked="#onPatientsClick" prefHeight="30.0" prefWidth="143.0" style="-fx-background-color: transparent;" text="Patients" textFill="WHITE">
+                           <font>
+                              <Font name="Yu Gothic Medium" size="17.0" />
+                           </font>
+                        </Button>
+                     </buttons>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ButtonBar>
+                  <ButtonBar fx:id="rendezvousAssis" layoutX="14.0" layoutY="280.0" onMouseClicked="#onRendezClicked" prefHeight="40.0" prefWidth="191.0">
+                     <buttons>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" onMouseClicked="#onRendezClicked" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../media/appointment.png" />
+                           </image>
+                        </ImageView>
+                        <Button alignment="TOP_LEFT" mnemonicParsing="false" onMouseClicked="#onRendezClicked" prefHeight="33.0" prefWidth="141.0" style="-fx-background-color: transparent;" text="Rendez-vous" textFill="WHITE">
+                           <font>
+                              <Font name="Yu Gothic Medium" size="17.0" />
+                           </font>
+                        </Button>
+                     </buttons>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ButtonBar>
+                  <ButtonBar fx:id="ordonnanceBtnAssis" layoutX="14.0" layoutY="360.0" onMouseClicked="#onOrdonanceClick" prefHeight="40.0" prefWidth="200.0">
+                     <buttons>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" onMouseClicked="#onOrdonanceClick" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../media/treatment.png" />
+                           </image>
+                        </ImageView>
+                        <Button alignment="TOP_LEFT" mnemonicParsing="false" onMouseClicked="#onOrdonanceClick" prefHeight="30.0" prefWidth="186.0" style="-fx-background-color: transparent;" text="Ordonnances" textFill="WHITE">
+                           <font>
+                              <Font name="Yu Gothic Medium" size="17.0" />
+                           </font>
+                        </Button>
+                     </buttons>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ButtonBar>
+                  <ButtonBar fx:id="ConsultationBtnAssis" layoutX="14.0" layoutY="440.0" onMouseClicked="#onConsultationClicked" prefHeight="40.0" prefWidth="200.0">
+                     <buttons>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" onMouseClicked="#onConsultationClicked" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../media/consultation.png" />
+                           </image>
+                        </ImageView>
+                        <Button alignment="TOP_LEFT" mnemonicParsing="false" onMouseClicked="#onConsultationClicked" prefHeight="30.0" prefWidth="136.0" style="-fx-background-color: transparent;" text="Consultations" textFill="WHITE">
+                           <font>
+                              <Font name="Yu Gothic Medium" size="17.0" />
+                           </font>
+                        </Button>
+                     </buttons>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ButtonBar>
+                  <ButtonBar fx:id="DoctorsBtn" layoutX="14.0" layoutY="520.0" onMouseClicked="#onDoctorsClick" prefHeight="40.0" prefWidth="191.0">
+                     <buttons>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" onMouseClicked="#onDoctorsClick" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../media/doctors.png" />
+                           </image>
+                        </ImageView>
+                        <Button alignment="TOP_LEFT" mnemonicParsing="false" onMouseClicked="#onDoctorsClick" prefHeight="30.0" prefWidth="136.0" style="-fx-background-color: transparent;" text="Docteurs" textFill="WHITE">
+                           <font>
+                              <Font name="Yu Gothic Medium" size="17.0" />
+                           </font>
+                        </Button>
+                     </buttons>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ButtonBar>
+                  <ButtonBar fx:id="rendezvousDoc" layoutX="14.0" layoutY="200.0" onMouseClicked="#onRendezClicked" prefHeight="40.0" prefWidth="191.0" visible="false">
+                     <buttons>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" onMouseClicked="#onRendezClicked" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../media/appointment.png" />
+                           </image>
+                        </ImageView>
+                        <Button alignment="TOP_LEFT" mnemonicParsing="false" onMouseClicked="#onRendezClicked" prefHeight="33.0" prefWidth="141.0" style="-fx-background-color: transparent;" text="Rendez-vous" textFill="WHITE">
+                           <font>
+                              <Font name="Yu Gothic Medium" size="17.0" />
+                           </font>
+                        </Button>
+                     </buttons>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ButtonBar>
+                  <ButtonBar fx:id="ordonnanceBtnDoc" layoutX="14.0" layoutY="280.0" onMouseClicked="#onOrdonanceClick" prefHeight="40.0" prefWidth="200.0" visible="false">
+                     <buttons>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" onMouseClicked="#onOrdonanceClick" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../media/treatment.png" />
+                           </image>
+                        </ImageView>
+                        <Button alignment="TOP_LEFT" mnemonicParsing="false" onMouseClicked="#onOrdonanceClick" prefHeight="30.0" prefWidth="186.0" style="-fx-background-color: transparent;" text="Ordonnances" textFill="WHITE">
+                           <font>
+                              <Font name="Yu Gothic Medium" size="17.0" />
+                           </font>
+                        </Button>
+                     </buttons>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ButtonBar>
+                  <ButtonBar fx:id="ConsultationBtnDoc" layoutX="14.0" layoutY="360.0" onMouseClicked="#onConsultationClicked" prefHeight="40.0" prefWidth="200.0" visible="false">
+                     <buttons>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" onMouseClicked="#onConsultationClicked" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../media/consultation.png" />
+                           </image>
+                        </ImageView>
+                        <Button alignment="TOP_LEFT" mnemonicParsing="false" onMouseClicked="#onConsultationClicked" prefHeight="30.0" prefWidth="136.0" style="-fx-background-color: transparent;" text="Consultations" textFill="WHITE">
+                           <font>
+                              <Font name="Yu Gothic Medium" size="17.0" />
+                           </font>
+                        </Button>
+                     </buttons>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ButtonBar>
+               </children>
+            </AnchorPane>
+            <Label layoutX="1082.0" layoutY="5.0" onMouseClicked="#CloseBtn" prefHeight="31.0" prefWidth="15.0" text="X">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label layoutX="263.0" layoutY="26.0" text="Dashboard">
+               <font>
+                  <Font name="Yu Gothic Bold" size="23.0" />
+               </font>
+            </Label>
+            <Pane layoutX="263.0" layoutY="84.0" prefHeight="165.0" prefWidth="565.0" style="-fx-background-color: transparent;">
+               <children>
+                  <ImageView fitHeight="161.0" fitWidth="565.0" layoutX="-1.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../../media/gradient.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="38.0" layoutY="47.0" text="Welcome ," textFill="WHITE">
+                     <font>
+                        <Font name="Yu Gothic Regular" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="nameOfUser" layoutX="163.0" layoutY="47.0" text="Dr. uknown" textFill="WHITE">
+                     <font>
+                        <Font name="Yu Gothic Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="41.0" layoutY="70.0" prefHeight="48.0" prefWidth="191.0" text="Have a nice day at work" textFill="WHITE">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="15.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="329.0" fitWidth="328.0" layoutX="287.0" layoutY="-113.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../media/research.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="846.0" layoutY="84.0" prefHeight="161.0" prefWidth="250.0">
+               <children>
+                  <ImageView fitHeight="165.0" fitWidth="250.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../media/profile.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="16.0" layoutY="8.0" text="Profile">
+                     <font>
+                        <Font name="Yu Gothic Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="66.0" fitWidth="66.0" layoutX="91.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../media/docUser.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="nameOfUser1" alignment="CENTER" layoutX="2.0" layoutY="107.0" prefHeight="16.0" prefWidth="250.0" text="Dr. Uknown" textAlignment="CENTER">
+                     <font>
+                        <Font name="Yu Gothic Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="168.0" layoutY="9.0" onMouseClicked="#onDisconnect" text="Disconnect" textFill="RED">
+                     <font>
+                        <Font name="Yu Gothic Bold" size="13.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+            </Pane>
+            <Label layoutX="263.0" layoutY="266.0" text="Report">
+               <font>
+                  <Font name="Yu Gothic Bold" size="23.0" />
+               </font>
+            </Label>
+            <Pane layoutX="263.0" layoutY="325.0" prefHeight="313.0" prefWidth="467.0">
+               <children>
+                  <Pane layoutX="14.0" layoutY="14.0" prefHeight="284.0" prefWidth="200.0">
+                     <children>
+                        <Pane prefHeight="284.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="284.0" fitWidth="200.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../../../media/profile.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="58.0" fitWidth="58.0" layoutX="71.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../media/patients.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="65.0" layoutY="91.0" text="Patients">
+                                 <font>
+                                    <Font name="Yu Gothic Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="nbrPatients" alignment="CENTER" layoutX="2.0" layoutY="120.0" prefHeight="129.0" prefWidth="200.0" text="0" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Yu Gothic Bold" size="30.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="253.0" layoutY="14.0" prefHeight="284.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="284.0" fitWidth="200.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../../../media/profile.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="58.0" fitWidth="58.0" layoutX="71.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../media/appointments.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="48.0" layoutY="93.0" text="Rendez-Vous">
+                           <font>
+                              <Font name="Yu Gothic Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="nbrRendezVous" alignment="CENTER" layoutX="2.0" layoutY="120.0" prefHeight="129.0" prefWidth="200.0" text="0" textAlignment="CENTER">
+                           <font>
+                              <Font name="Yu Gothic Bold" size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <BorderPane fx:id="grp" layoutX="728.0" layoutY="340.0" prefHeight="284.0" prefWidth="359.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

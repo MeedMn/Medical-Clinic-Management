@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="596.0" prefWidth="443.0" style="-fx-background-color: #DCDCDC; -fx-border-radius: 20;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cabinet.gestion_cabinetmedicale.AddOrdonanceFormController">
+    <children>
+        <ImageView fitHeight="74.0" fitWidth="74.0" layoutX="184.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../media/ord.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="142.0" layoutY="98.0" text="Ajouter Ordonnance">
+            <font>
+                <Font name="Yu Gothic Bold" size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="411.0" layoutY="14.0" onMouseClicked="#CloseBtn" prefHeight="31.0" prefWidth="15.0" text="X">
+            <font>
+                <Font size="24.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Label>
+        <TextField fx:id="cneInput" focusTraversable="false" layoutX="87.0" layoutY="141.0" prefHeight="35.0" prefWidth="267.0" promptText="Cne" />
+        <DatePicker fx:id="dateOrd" focusTraversable="false" layoutX="88.0" layoutY="486.0" prefHeight="35.0" prefWidth="267.0" promptText="Date d'ordonnance" />
+        <Button fx:id="saveOrd" layoutX="87.0" layoutY="537.0" mnemonicParsing="false" onAction="#insertOrd" prefHeight="33.0" prefWidth="267.0" style="-fx-background-color: #2a2a2a;" text="Ajouter Ordonnance" textFill="WHITE">
+            <font>
+                <Font name="Yu Gothic Bold" size="12.0" />
+            </font>
+        </Button>
+      <TextArea fx:id="contentArea" layoutX="88.0" layoutY="201.0" prefHeight="262.0" prefWidth="267.0" promptText="Content d'ordonnance" />
+    </children>
+</AnchorPane>
