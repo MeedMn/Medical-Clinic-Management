@@ -42,3 +42,7 @@ This dashboard appears to an assitant.
 
 # Doctors :
 ![alt text](https://github.com/MeedMn/Medical-Clinic-Management/blob/8cfd5ff9d9d82df07efe65422fbb452e5d1608e5/screenshots/Doctors.jpg)
+
+# Requirements :
+java, javafx
+Dont forget to add tables to your database , you can import the sql file gestiont-cabinet.sql to your phpmyqdmin to create the tables and add some data that you can remove later depending on the need.
