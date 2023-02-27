@@ -4,7 +4,7 @@ it's made by a groupe of Computer science students :
 Mohamed Menfalouti ( MeedMn )
 Soufiane Bouaddis ( mjustatool )
 Mohamed Ismail Menhal ( Ismailmenhal )
-Mohamed Amine Liba
+Mohamed Amine Liba ( MohamedAmineLiba )
 
 # ScreenShots From the application
 
